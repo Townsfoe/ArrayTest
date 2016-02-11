@@ -9,7 +9,7 @@ namespace ArrayTest
     class Card
 
     {
-        private String Name;
+        private String name;
         private int cost;
         
         public Card()
@@ -17,14 +17,23 @@ namespace ArrayTest
         
         public Card(String str, int num)
         {
-            this.Name = str;
+            this.name = str;
             this.cost = num;
 
         }
 
-        public String getName()
+        public void getStats()
         {
-            return this.Name;
+            Console.WriteLine(this.Name);
+            Console.WriteLine(this.Cost);
+        }
+
+        public String Name
+        {
+            get
+            {
+                return this.name;
+            }
         }
 
         public int Cost
